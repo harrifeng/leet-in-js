@@ -1,0 +1,22 @@
+{
+  "name": "leet-in-js",
+  "version": "1.0.0",
+  "description": "Leetcode written in js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrifeng/leet-in-js.git"
+  },
+  "keywords": [
+    "leetcode"
+  ],
+  "author": "Harri Feng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrifeng/leet-in-js/issues"
+  },
+  "homepage": "https://github.com/harrifeng/leet-in-js#readme"
+}
