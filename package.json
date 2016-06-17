@@ -4,7 +4,7 @@
   "description": "Leetcode written in js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/mocha *.js"
   },
   "repository": {
     "type": "git",
