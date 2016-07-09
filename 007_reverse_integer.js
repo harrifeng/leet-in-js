@@ -28,4 +28,3 @@ describe('Leetcode', function() {
         assert.equal(0, reverse(Math.pow(2, 31)));
     });
 });
-

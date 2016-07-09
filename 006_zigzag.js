@@ -17,7 +17,7 @@ var convert = function(s, numRows) {
         if (now < numRows) {
             ret[now] += s[i];
         } else {
-            ret[g - now]  += s[i];
+            ret[g - now] += s[i];
         }
     }
     return ret.join('');
@@ -29,4 +29,3 @@ describe('Leetcode', function() {
         assert.equal("PAHNAPLSIIGYIR", convert("PAYPALISHIRING", 3));
     });
 });
-

@@ -17,7 +17,7 @@ var longestPalindrome = function(s) {
 
     for (var i = 1; i < t.length - 1; i++) {
         if (tmpr > i) {
-            p[i] = Math.min(tmpr - i, p[2*tmpc - tmpr]);
+            p[i] = Math.min(tmpr - i, p[2 * tmpc - tmpr]);
         } else {
             p[i] = 1;
         }
@@ -36,7 +36,7 @@ var longestPalindrome = function(s) {
             maxi = i;
         }
     }
-    var start = parseInt(maxi/2) - parseInt(maxv/2);
+    var start = parseInt(maxi / 2) - parseInt(maxv / 2);
     return s.slice(start, start + maxv - 1);
 };
 
@@ -47,4 +47,3 @@ describe('Leetcode', function() {
         assert.equal("abccba", longestPalindrome("abccbaaaa"));
     });
 });
-

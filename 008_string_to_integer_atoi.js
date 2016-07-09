@@ -14,8 +14,7 @@ var myAtoi = function(str) {
             if (cur === '-') {
                 sign = -1;
             }
-        }
-        else if (cur >= '0' && cur <= '9') {
+        } else if (cur >= '0' && cur <= '9') {
             ret = ret * 10 + (cur - '0');
             if (ret * sign >= imax) {
                 return imax;
@@ -40,4 +39,3 @@ describe('Leetcode', function() {
         assert.equal(myAtoi("-2147483648"), -2147483648);
     });
 });
-
