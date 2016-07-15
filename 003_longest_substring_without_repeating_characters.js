@@ -7,7 +7,7 @@ var lengthOfLongestSubstring = function(s) {
     var maxv = 0;
     var dict = {};
 
-    for (var i = 0; i < s.length; i++) {
+    for (let i = 0; i < s.length; i++) {
         if (dict.hasOwnProperty(s[i])) {
             last = Math.max(last, dict[s[i]] + 1);
         }

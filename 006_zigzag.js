@@ -6,13 +6,13 @@
 
 var convert = function(s, numRows) {
     var ret = [];
-    for (var i = 0; i < numRows; i++) {
+    for (let i = 0; i < numRows; i++) {
         ret.push('');
     }
 
     var g = 2 * numRows - 2;
 
-    for (var i = 0; i < s.length; i++) {
+    for (let i = 0; i < s.length; i++) {
         var now = i % g;
         if (now < numRows) {
             ret[now] += s[i];

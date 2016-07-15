@@ -8,7 +8,7 @@ var myAtoi = function(str) {
     var imin = Math.pow(-2, 31);
     var imax = Math.pow(2, 31) - 1;
 
-    for (var i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
         var cur = str[i];
         if (i === 0 && (cur === '+' || cur === '-')) {
             if (cur === '-') {

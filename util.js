@@ -6,7 +6,7 @@ function ListNode(val) {
 function getLinkFromArray(arr) {
     var dummy = new ListNode(-1);
     var cur = dummy;
-    for (var i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         cur.next = new ListNode(arr[i]);
         cur = cur.next;
     }

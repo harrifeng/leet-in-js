@@ -6,7 +6,7 @@
 var longestPalindrome = function(s) {
     var t = '^#' + s.split('').join('#') + '#$';
     var p = [];
-    for (var i = 0; i < 3003; i++) {
+    for (let i = 0; i < 3003; i++) {
         p.push(0);
     }
 
@@ -15,7 +15,7 @@ var longestPalindrome = function(s) {
     var maxi = 0;
     var maxv = 0;
 
-    for (var i = 1; i < t.length - 1; i++) {
+    for (let i = 1; i < t.length - 1; i++) {
         if (tmpr > i) {
             p[i] = Math.min(tmpr - i, p[2 * tmpc - tmpr]);
         } else {
